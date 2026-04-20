@@ -1,0 +1,27 @@
+// Paleta de colores
+$color-primary-dark: #0B1F3B;    // Azul marino
+$color-primary-light: #005CAB;   // Azul corporativo claro
+$color-secondary: #7BAE7F;       // Verde salvia
+$color-accent: #003366;          // Azul corporativo oscuro
+$color-bg-light: #F7F3EE;        // Blanco
+$color-bg-warm: #E6D8C3;         // Beige
+$color-text-dark: #0B1F3B;
+$color-text-light: #F7F3EE;
+$color-border: #d4d4d4;
+
+// Tipografía
+$font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-size-heading: 32px;
+
+// Espaciado
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Transiciones
+$transition-base: all 0.3s ease;

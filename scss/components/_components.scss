@@ -1,0 +1,112 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Botones personalizados
+.btn-primary {
+  background-color: $color-primary-light !important;
+  border-color: $color-primary-light !important;
+  color: $color-bg-light;
+  font-weight: 600;
+  padding: $spacing-sm $spacing-lg;
+  @include border-radius(8px);
+  
+  &:hover {
+    background-color: $color-primary-dark !important;
+    border-color: $color-primary-dark !important;
+    transform: translateY(-2px);
+    @include shadow-medium;
+  }
+}
+
+.btn-secondary {
+  background-color: $color-secondary !important;
+  border-color: $color-secondary !important;
+  color: $color-bg-light;
+  font-weight: 600;
+  padding: $spacing-sm $spacing-lg;
+  @include border-radius(8px);
+  
+  &:hover {
+    background-color: darken($color-secondary, 10%) !important;
+    transform: translateY(-2px);
+    @include shadow-medium;
+  }
+}
+
+// Tarjetas
+.card {
+  border: none;
+  @include shadow-light;
+  @include border-radius(12px);
+  transition: $transition-base;
+  border-top: 4px solid $color-secondary;
+  
+  &:hover {
+    @include shadow-medium;
+    transform: translateY(-4px);
+  }
+  
+  .card-header {
+    background-color: $color-bg-warm;
+    border-bottom: 2px solid $color-secondary;
+  }
+  
+  .card-body {
+    padding: $spacing-lg;
+  }
+}
+
+// Formularios
+.form-control, .form-select {
+  border: 2px solid $color-border;
+  @include border-radius(6px);
+  transition: $transition-base;
+  
+  &:focus {
+    border-color: $color-primary-light;
+    box-shadow: 0 0 0 0.2rem rgba(0, 92, 171, 0.25);
+  }
+}
+
+.form-label {
+  color: $color-primary-dark;
+  font-weight: 600;
+  margin-bottom: $spacing-sm;
+}
+
+// Hero section
+.hero {
+  background: linear-gradient(135deg, $color-primary-dark 0%, $color-primary-light 100%);
+  color: $color-bg-light;
+  padding: $spacing-xl * 2 $spacing-lg;
+  @include flex-center;
+  min-height: 500px;
+  text-align: center;
+  
+  h1 {
+    color: $color-bg-light;
+    font-size: 48px;
+    margin-bottom: $spacing-lg;
+  }
+  
+  p {
+    font-size: $font-size-large;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+// Animaciones suaves
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}

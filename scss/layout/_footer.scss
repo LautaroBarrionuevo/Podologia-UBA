@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+footer {
+  background-color: $color-primary-dark;
+  color: $color-bg-light;
+  padding: $spacing-xl $spacing-lg;
+  margin-top: $spacing-xl;
+
+  a {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-bg-light;
+    }
+  }
+
+  .footer-section {
+    margin-bottom: $spacing-lg;
+
+    h5 {
+      color: $color-bg-light;
+      margin-bottom: $spacing-md;
+    }
+  }
+}

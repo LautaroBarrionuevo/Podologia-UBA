@@ -1,0 +1,49 @@
+// Breakpoints para responsive
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Flexbox utilities
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Sombras
+@mixin shadow-light {
+  box-shadow: 0 2px 8px rgba(11, 31, 59, 0.1);
+}
+
+@mixin shadow-medium {
+  box-shadow: 0 4px 12px rgba(11, 31, 59, 0.15);
+}
+
+// Bordes redondeados
+@mixin border-radius($radius: 8px) {
+  border-radius: $radius;
+}

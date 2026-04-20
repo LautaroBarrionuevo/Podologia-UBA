@@ -1,0 +1,68 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+@include tablet {
+  body {
+    font-size: $font-size-small;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .hero {
+    padding: $spacing-xl $spacing-lg;
+    min-height: 350px;
+    
+    h1 {
+      font-size: 32px;
+    }
+  }
+  
+  header nav {
+    flex-wrap: wrap;
+  }
+}
+
+@include mobile {
+  body {
+    font-size: $font-size-small;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  .hero {
+    padding: $spacing-lg;
+    min-height: 300px;
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: $font-size-base;
+    }
+  }
+  
+  section {
+    padding: $spacing-lg;
+  }
+  
+  .card {
+    margin-bottom: $spacing-lg;
+  }
+}

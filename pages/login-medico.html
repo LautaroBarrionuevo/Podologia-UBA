@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de acceso para médicos en Podología UBA - Parque Chas. Gestiona consultas y pacientes.">
+    <meta name="keywords" content="login médico, portal médico, acceso profesional">
+    <title>Login Médico | Podología UBA - Parque Chas</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <strong>🦶 Podología UBA</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empleo.html">Empleo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login-medico.html">Login Médico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login-paciente.html">Login Paciente</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" style="background: linear-gradient(135deg, #0B1F3B 0%, #005CAB 100%);">
+            <div class="container text-center">
+                <h1>Portal Médico</h1>
+                <p class="lead">Acceso profesional para especialistas</p>
+            </div>
+        </section>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- INFORMACIÓN -->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="mb-4">Bienvenida, Profesional</h2>
+                        <div class="card mb-4">
+                            <div class="card-header" style="background-color: #7BAE7F;">
+                                <h5 class="mb-0" style="color: #F7F3EE;">¿Qué Puedes Hacer?</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <strong>📋 Gestionar Consultas</strong>
+                                        <p class="ms-3">Visualiza, edita y administra tus consultas programadas.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>👥 Base de Pacientes</strong>
+                                        <p class="ms-3">Accede al historial completo de tus pacientes.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>📊 Reportes</strong>
+                                        <p class="ms-3">Genera reportes de desempeño y estadísticas.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>⚙️ Configuración</strong>
+                                        <p class="ms-3">Personaliza tu perfil y preferencias profesionales.</p>
+                                    </li>
+                                    <li>
+                                        <strong>📞 Soporte</strong>
+                                        <p class="ms-3">Contacta con nuestro equipo de soporte técnico.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORMULARIO DE LOGIN -->
+                    <div class="col-lg-6">
+                        <div class="card" style="border-top: 4px solid #005CAB;">
+                            <div class="card-header" style="background-color: #F7F3EE;">
+                                <h5 class="mb-0 text-center">Iniciar Sesión</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="usuarioMedico" class="form-label">Usuario / Email</label>
+                                        <input type="text" class="form-control" id="usuarioMedico" placeholder="Tu usuario o email profesional" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contraseniaMedico" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="contraseniaMedico" placeholder="Tu contraseña" required>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="recordarMedico">
+                                        <label class="form-check-label" for="recordarMedico">
+                                            Recuérdame en este dispositivo
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">Ingresar</button>
+                                    <hr>
+                                    <p class="text-center mb-2">¿Olvidaste tu contraseña?</p>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm w-100 mb-3">Recuperar Contraseña</a>
+                                    <p class="text-center text-muted small">¿Primera vez? Contacta con administración para registrarte.</p>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <!-- AVISO -->
+                        <div class="alert alert-info mt-4" role="alert">
+                            <strong>ℹ️ Nota:</strong> Este es un portal demostrativo. El acceso está limitado a fines educativos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REQUISITOS -->
+        <section class="py-5" style="background-color: #F7F3EE;">
+            <div class="container">
+                <h2 class="mb-5 text-center">Requisitos para Acceso</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header" style="background-color: #005CAB; color: #F7F3EE;">
+                                <h5 class="text-center mb-0">1. Registro Profesional</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Ser profesional matriculado en podología y estar registrado en nuestro sistema.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header" style="background-color: #005CAB; color: #F7F3EE;">
+                                <h5 class="text-center mb-0">2. Credenciales</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Poseer usuario y contraseña asignados por la administración de Podología UBA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header" style="background-color: #005CAB; color: #F7F3EE;">
+                                <h5 class="text-center mb-0">3. Vinculación</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Estar vinculado laboralmente o como colaborador de nuestro consultorio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOPORTE -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="mb-4 text-center">¿Necesitas Ayuda?</h2>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p>Si tienes problemas para acceder o necesitas soporte técnico:</p>
+                                <div class="mb-4">
+                                    <p><strong>Email de Soporte:</strong> <a href="mailto:soporte@podologiauba.com">soporte@podologiauba.com</a></p>
+                                    <p><strong>Teléfono:</strong> <a href="tel:+541100000000">+54 11 0000-0000</a></p>
+                                    <p><strong>Horario de Atención:</strong> Lunes a Viernes 09:00 - 18:00</p>
+                                </div>
+                                <a href="contacto.html" class="btn btn-primary">Contactar Soporte</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background-color: #0B1F3B; color: #F7F3EE;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Podología UBA</h5>
+                    <p>Especialistas en cuidado de pies con formación UBA.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Ubicación</h5>
+                    <p>Parque Chas, CABA<br>Buenos Aires, Argentina</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacto</h5>
+                    <p>Tel: +54 11 XXXX-XXXX<br>Email: info@podologiauba.com</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Enlaces</h5>
+                    <p>
+                        <a href="../index.html">Inicio</a><br>
+                        <a href="login-paciente.html">Login Paciente</a><br>
+                        <a href="contacto.html">Contacto</a>
+                    </p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <div class="text-center">
+                <p>&copy; 2024 Podología UBA - Parque Chas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
