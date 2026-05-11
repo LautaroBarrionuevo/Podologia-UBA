@@ -24,13 +24,13 @@ header {
     }
 
     .nav-link {
-      color: $color-bg-light !important;
+      color: $color-bg-light;
       font-weight: 500;
       margin-left: $spacing-lg;
       transition: $transition-base;
 
       &:hover {
-        color: $color-secondary !important;
+        color: $color-secondary;
       }
     }
   }
