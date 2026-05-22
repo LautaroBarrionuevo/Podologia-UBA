@@ -185,7 +185,7 @@ section {
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(11, 31, 59, 0.8) 0%, rgba(0, 92, 171, 0.8) 100%), url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80") center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(11, 31, 59, 0.8) 0%, rgba(0, 92, 171, 0.8) 100%), url("../img/BanerIndex.jpg") center/cover no-repeat;
   color: #F7F3EE;
   padding: 120px 24px;
   display: flex;
@@ -202,6 +202,13 @@ section {
 .hero p {
   font-size: 18px;
   margin-bottom: 24px;
+}
+
+.call-to-action h2 {
+  color: #F7F3EE;
+}
+.call-to-action p {
+  color: #F7F3EE;
 }
 
 @keyframes fadeIn {
